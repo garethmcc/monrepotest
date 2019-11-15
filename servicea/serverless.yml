@@ -101,7 +101,19 @@ functions:
 #      variable2: value2
 
 # you can add CloudFormation resource templates here
-#resources:
+resources:
+  Resources:
+    testTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: ServiceATable
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
 #  Resources:
 #    NewResource:
 #      Type: AWS::S3::Bucket
