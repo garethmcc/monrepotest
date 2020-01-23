@@ -1,8 +1,8 @@
 'use strict';
 const fetch = require('node-fetch')
 
-module.exports.hello = async event => {
-    await context.serverlessSdk.span('some-label', async () => {
+module.exports.hello = async (event, context) => {
+    await context.serverlessSdk.span('Dog Facts', async () => {
         return fetch('https://some-random-api.ml/facts/dog')
     });
   return {
