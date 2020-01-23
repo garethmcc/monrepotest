@@ -1,0 +1,23 @@
+{
+  "name": "monorepotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garethmcc/monrepotest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garethmcc/monrepotest/issues"
+  },
+  "homepage": "https://github.com/garethmcc/monrepotest#readme"
+}
