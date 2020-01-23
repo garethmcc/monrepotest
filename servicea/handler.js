@@ -1,10 +1,17 @@
 'use strict';
 const fetch = require('node-fetch')
-
+const bcrypt = require('bcryptjs')
 module.exports.hello = async (event, context) => {
+    await context.serverlessSdk.span('HASH', async () => {
+        return new Promise((resolve, reject) => {
+            bcrypt.hash(password, 13, () => {
+                resolve()
+            })
+        })
+    })
     await context.serverlessSdk.span('Dog Facts', async () => {
         return fetch('https://some-random-api.ml/facts/dog')
-    });
+    })
   return {
     statusCode: 200,
     body: JSON.stringify(
