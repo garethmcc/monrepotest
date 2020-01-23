@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs')
 module.exports.hello = async (event, context) => {
     await context.serverlessSdk.span('HASH', async () => {
         return new Promise((resolve, reject) => {
-            bcrypt.hash(password, 13, () => {
+            bcrypt.hash("ARANDMOMSTRING", 13, () => {
                 resolve()
             })
         })
