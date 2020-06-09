@@ -2,9 +2,10 @@
 const fetch = require('node-fetch')
 const bcrypt = require('bcryptjs')
 module.exports.hello = async (event, context) => {
+  console.log('Hello')
     await context.serverlessSdk.span('HASH', async () => {
         return new Promise((resolve, reject) => {
-            bcrypt.hash("Another change", 10, () => {
+            bcrypt.hash("Another change!!!", 10, () => {
                 resolve()
             })
         })
@@ -12,6 +13,11 @@ module.exports.hello = async (event, context) => {
     await context.serverlessSdk.span('Dog Facts', async () => {
         return fetch('https://some-random-api.ml/facts/dog')
     })
+
+
+
+
+
   return {
     statusCode: 200,
     body: JSON.stringify(

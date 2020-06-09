@@ -14,7 +14,7 @@
 service: servicea
 # app and org for use with dashboard.serverless.com
 app: monorepotest
-org: garethmccumskeycicd
+org: garethmccumskey
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -45,7 +45,8 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-#  environment:
+  environment:
+#    DB_HOST: ${param:DBHOST}
 #    variable1: value1
 
 # you can add packaging information here
