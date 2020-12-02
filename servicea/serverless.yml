@@ -45,7 +45,8 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-  #environment:
+  environment:
+    STRIPE_API_KEY: ${param:STRIPE_API_KEY}
 #    variable1: value1
 
 # you can add packaging information here
