@@ -5,7 +5,7 @@ module.exports.hello = async (event, context) => {
   console.log('Hello')
     await context.serverlessSdk.span('another changes', async () => {
         return new Promise((resolve, reject) => {
-            bcrypt.hash("Another changea gain!!!", 10, () => {
+            bcrypt.hash("More Another changea gain!!!", 10, () => {
                 resolve()
             })
         })
