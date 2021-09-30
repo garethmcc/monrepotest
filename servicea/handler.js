@@ -2,7 +2,7 @@
 const fetch = require('node-fetch')
 const bcrypt = require('bcryptjs')
 module.exports.hello = async (event, context) => {
-  console.log('Hello')
+  console.log('Edited')
     await context.serverlessSdk.span('another changes', async () => {
         return new Promise((resolve, reject) => {
             bcrypt.hash("More Another changea gain!!!", 10, () => {
