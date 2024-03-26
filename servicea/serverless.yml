@@ -26,7 +26,7 @@ provider:
     name: sls-deployment-bucket-mccumskey
   name: aws
   runtime: nodejs20.x
-  region: eu-west-1
+  region: us-east-1
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
