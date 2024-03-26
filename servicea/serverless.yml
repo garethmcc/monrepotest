@@ -21,6 +21,7 @@ org: garethmccumskey
 # frameworkVersion: "=X.X.X"
 
 provider:
+
   deploymentBucket: 
     name: sls-deployment-bucket-mccumskey
   name: aws
