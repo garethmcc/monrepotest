@@ -5,7 +5,7 @@ module.exports.hello = async event => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: 'change to trigger 3 services or more',
+        message: 'change to trigger 2 services or more',
         input: event,
       },
       null,
